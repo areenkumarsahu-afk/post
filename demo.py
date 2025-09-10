@@ -8,7 +8,7 @@ st.title("Demo: AI Assistant for Your Business")
 st.markdown("Demo Version - Token usage is limited by your demo token.")
 st.markdown("This is a demo showcase. Contact us to unlock unlimited chats, training on your data, and full customization!")
 
-BASE_URL="https://127.0.0.1:8000"
+BASE_URL="http://127.0.0.1:8000"
 
 query_params=st.query_params
 token=query_params.get("token")
@@ -36,4 +36,5 @@ else:
                     st.markdown("👉 Or fill our [Email Form](https://docs.google.com/forms/d/e/1FAIpQLSdcsHT1ixLwIZhI7bJrMBWDUNhinEMouq6USDb_9ERre7sIaw/viewform?usp=dialog)")
                     st.markdown("👉 Learn more on our [Notion Page](https://www.notion.so/AI-Chatbots-That-Work-While-You-Sleep-245eb1fcbdfb80678680f57248d685c8?source=copy_link)")
         except Exception as e:
+
             st.error(f"Backend not reachable:{e}")
