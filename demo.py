@@ -8,7 +8,7 @@ st.title("Demo: AI Assistant for Your Business")
 st.markdown("Demo Version - Token usage is limited by your demo token.")
 st.markdown("This is a demo showcase. Contact us to unlock unlimited chats, training on your data, and full customization!")
 
-BASE_URL="http://127.0.0.1:8000"
+BASE_URL="https://demo-demo-9.onrender.com"
 
 query_params=st.query_params
 token=query_params.get("token")
@@ -38,3 +38,4 @@ else:
         except Exception as e:
 
             st.error(f"Backend not reachable:{e}")
+
