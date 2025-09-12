@@ -45,6 +45,9 @@ else:
                         st.markdown("👉 Learn more on our [Notion Page](https://www.notion.so/AI-Chatbots-That-Work-While-You-Sleep-245eb1fcbdfb80678680f57248d685c8?source=copy_link)")
                 except Exception:
                     pass
+        except Exception:
+            st.error("Request failed.")
+
 
 
 
