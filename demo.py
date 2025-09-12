@@ -8,7 +8,7 @@ st.title("Demo: AI Assistant for Your Business")
 st.markdown("Demo Version - Token usage is limited by your demo token.")
 st.markdown("This is a demo showcase. Contact us to unlock unlimited chats, training on your data, and full customization!")
 
-BASE_URL="https://backend-slvu.onrender.com"
+BASE_URL="https://backend-svlu.onrender.com"
 
 query_params=st.query_params
 token=query_params.get("token")
@@ -47,6 +47,7 @@ else:
                     pass
         except Exception:
             st.error("Request failed.")
+
 
 
 
