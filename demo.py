@@ -3,7 +3,9 @@ import requests
 
 st.set_page_config(page_title="AI Chatbot Demo",page_icon="🤖",layout="wide")
 
-st.image("brand-1.jpg",width=150)
+col1,col2,col3=st.columns([1,1,1])
+with col2:
+    st.image("brand-1.jpg",use_container_width=True)
 st.title("Demo: AI Assistant for Your Business")
 st.markdown("Demo Version - Token usage is limited by your demo token.")
 st.markdown("This is a demo showcase. Contact us to unlock unlimited chats, training on your data, and full customization!")
@@ -47,6 +49,7 @@ else:
                     pass
         except Exception:
             st.error("Request failed.")
+
 
 
 
